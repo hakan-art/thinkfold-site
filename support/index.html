@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thinkfold · Support</title>
+<meta name="description" content="Support für die App Thinkfold. Support for the Thinkfold app.">
+<style>
+  :root {
+    --bg: #F4F3F6; --surface: #FFFFFF; --ink: #1B1B1F; --muted: #5F5F66;
+    --line: #E4E2EA; --accent: #C2672A; --chip: #FFE6D5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141317; --surface: #1E1C23; --ink: #F3F2F6; --muted: #A9A7B0;
+            --line: #2E2B35; --accent: #F2A06A; --chip: #3A2A20; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  .brand { font-weight: 800; letter-spacing: -0.02em; font-size: 15px; }
+  .brand::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+                   background: var(--accent); margin-right: 8px; vertical-align: 1px; }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 14px 0 6px; font-weight: 700; }
+  h2 { font-size: 21px; margin: 36px 0 8px; letter-spacing: -0.01em; }
+  h3 { font-size: 17px; margin: 22px 0 4px; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--muted); font-size: 15px; margin: 0 0 22px; }
+  .lang { display: flex; gap: 8px; margin: 18px 0 8px; }
+  .lang a { text-decoration: none; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+            border-radius: 999px; padding: 6px 14px; font-size: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; margin: 18px 0; }
+  .card strong { display: block; margin-bottom: 4px; }
+  .summary { list-style: none; padding: 0; margin: 0; }
+  .summary li { padding: 6px 0 6px 26px; position: relative; }
+  .summary li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .placeholder { background: var(--chip); border-radius: 6px; padding: 0 5px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 8px; }
+  a { color: var(--accent); }
+  @media (max-width: 480px) { h1 { font-size: 28px; } main { padding-top: 32px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">thinkfold</div>
+  <nav class="lang" aria-label="Sprache / Language">
+    <a href="#de">Deutsch</a><a href="#en">English</a>
+  </nav>
+
+  <section id="de" lang="de">
+    <h1>Support</h1>
+    <p class="meta">Hilfe zur App Thinkfold für iPhone und iPad</p>
+    <div class="card">
+      <strong>Kontakt</strong>
+      <p>Fragen, Fehler oder Ideen? Schreib an <a href="mailto:h.gezer@arcor.de?subject=Thinkfold">h.gezer@arcor.de</a>. Hilfreich sind Gerät, iOS-Version und ein kurzer Ablauf, wie das Problem entsteht.</p>
+    </div>
+    <h2>Häufige Fragen</h2>
+    <h3>Wo werden meine Ideen gespeichert?</h3>
+    <p>Nur auf deinem Gerät. Es gibt kein Konto und keine Cloud. Wenn du die App löschst, werden auch die Daten gelöscht. Sichern kannst du einzelne Projekte als Projektbrief (Markdown) und die Inbox als Datei.</p>
+    <h3>Das Diktieren funktioniert nicht.</h3>
+    <p>Erlaube Mikrofon und Spracherkennung unter <em>Einstellungen → Thinkfold</em>. Die Erkennung läuft auf dem Gerät und benötigt dafür die Sprache Deutsch oder Englisch.</p>
+    <h3>Wie bekomme ich ein Projekt in eine KI?</h3>
+    <p>Öffne den Projektbrief über die Canvas-Werkzeuge und teile ihn als Text oder Markdown-Datei. Antworten einer KI im Markdown-Format kannst du als neues Canvas importieren.</p>
+    <p><a href="../datenschutz/">Datenschutzerklärung</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Support</h1>
+    <p class="meta">Help for the Thinkfold app for iPhone and iPad</p>
+    <div class="card">
+      <strong>Contact</strong>
+      <p>Questions, bugs or ideas? Write to <a href="mailto:h.gezer@arcor.de?subject=Thinkfold">h.gezer@arcor.de</a>. Please include your device, iOS version and the steps that lead to the problem.</p>
+    </div>
+    <h2>Frequently asked questions</h2>
+    <h3>Where are my ideas stored?</h3>
+    <p>Only on your device. There is no account and no cloud. Deleting the app also deletes its data. You can back up individual projects as a project brief (Markdown) and the inbox as a file.</p>
+    <h3>Dictation does not work.</h3>
+    <p>Allow microphone and speech recognition under <em>Settings → Thinkfold</em>. Recognition runs on your device and supports English and German.</p>
+    <h3>How do I get a project into an AI assistant?</h3>
+    <p>Open the project brief from the canvas tools and share it as text or a Markdown file. You can import an AI's Markdown answer as a new canvas.</p>
+    <p><a href="../datenschutz/#en">Privacy Policy</a></p>
+  </section>
+</main>
+</body>
+</html>
